@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Caculadora</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Poppins&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <div class="container-info">
+            <div class="input-block">
+                <Input id="id-materia" name="name" placeholder="Digite o Id desejado" />
+            </div>
+
+            <div>
+                <label id="materia">Matéria</label>
+                <label>,     Média esperada:</label>
+                <label id="media"></label>
+            </div>    
+            
+            <div class="container-horizontal">
+                <h2>Nota P1: </h2>
+                <label id="nota_p1"></label>
+                <h2>Nota P2: </h2>
+                <label id="nota_p2"></label>
+                <h2>Nota P3 <br> necessária: </h2>
+                <label id="nota_p3"></label>
+            </div>
+
+            <div class="container-horizontal">
+                <h2>Peso P1: </h2>
+                <label id="peso_p1"></label>
+                <h2>Peso P2: </h2>
+                <label id="peso_p2"></label>
+                <h2>Peso P3: </h2>
+                <label id="peso_p3"></label>
+            </div>
+        </div>    
+
+        <div type="submit" class="container-buttons" onclick="chamada(document.getElementById('id-materia').value)">
+            <button>Calcular Notas</button>
+        </div>
+        
+    </section>
+</body>
+
+</html>
